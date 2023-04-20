@@ -1,18 +1,20 @@
 import './App.css';
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar'
+import Feed from './components/Feed';
+import Widgets from './components/Widgets';
 
 function App() {
   return (
-    <>
-      <h1>Twitter clone</h1>
+    <div className='app'>
       {/* Sidebar- on the left */}
       <Sidebar/>
 
-
       {/* Feed- only scrolable thing */}
+      <Feed/>
 
       {/* Widgets- the cards in the right hand */}
-    </>
+      <Widgets/>
+    </div>
   );
 }
 
