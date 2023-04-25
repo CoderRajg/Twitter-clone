@@ -15,6 +15,11 @@ function Feed() {
       <TweetBox/>
       {/* Tweets/posts */}
       <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
       {/* Tweets/posts */}
       {/* Tweets/posts */}
       {/* Tweets/posts */}

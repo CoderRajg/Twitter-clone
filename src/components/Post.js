@@ -17,7 +17,7 @@ function Post() {
   return (
     <div className="post">
       <div className="post-avatar">
-        <Avatar />
+        <Avatar src="https://www.bollywoodhungama.com/wp-content/uploads/2023/04/Yash-Raj-Films-decides-to-take-a-break-from-Ranveer-Singh-after-his-hat-trick-of-flops-2.jpg"/>
       </div>
       <div className="post-body">
         <div className="post-header">
@@ -27,7 +27,7 @@ function Post() {
               <span>
                 <VerifiedIcon className="verified-icon" />
               </span>
-              @raj_gupta
+              <span className="post-username">@raj_gupta</span>
             </h3>
           </div>
           <div className="post-text">
