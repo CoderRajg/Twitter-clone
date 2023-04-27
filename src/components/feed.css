@@ -14,5 +14,11 @@
     background-color: white;
     z-index: 100;
     border-right: 1px solid var(--twitter-background);
+    border-bottom: 1px solid var(--twitter-background);
     
+}
+
+.feed_header h2{
+    margin-left: 20px;
+    margin-bottom: 10px;
 }

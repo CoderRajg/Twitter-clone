@@ -7,37 +7,31 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PollIcon from "@mui/icons-material/Poll";
 
-function Post() {
-  // display name,
-  // username,
-  // verified,
-  // text,
-  // image,
-  // avatar
+function Post({displayName,username,verified,text,image,avatar}) {
+  
   return (
     <div className="post">
       <div className="post-avatar">
-        <Avatar src="https://www.bollywoodhungama.com/wp-content/uploads/2023/04/Yash-Raj-Films-decides-to-take-a-break-from-Ranveer-Singh-after-his-hat-trick-of-flops-2.jpg"/>
+        <Avatar src={avatar}/>
       </div>
       <div className="post-body">
         <div className="post-header">
           <div className="post-headertext">
             <h3>
-              Raj Gupta{" "}
+              {displayName}{" "}
               <span>
-                <VerifiedIcon className="verified-icon" />
+                {verified && <VerifiedIcon className="verified-icon" /> }
               </span>
-              <span className="post-username">@raj_gupta</span>
+              <span className="post-username">@{username}</span>
             </h3>
           </div>
           <div className="post-text">
             <p>
-              This is twitter colne i am making and i will make it with my best
-              of knowledge thanku every youtuber to make it possible
+              {text}
             </p>
           </div>
           <img
-            src="https://www.bollywoodhungama.com/wp-content/uploads/2023/04/Yash-Raj-Films-decides-to-take-a-break-from-Ranveer-Singh-after-his-hat-trick-of-flops-2.jpg"
+            src={image}
             alt=""
           />
           <div className="post-bottom">

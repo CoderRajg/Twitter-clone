@@ -12,6 +12,7 @@
 }
 
 .widgets-input input{
+    margin-left: 10px;
     border: none;
     background-color: var(--twitter-background);
 }

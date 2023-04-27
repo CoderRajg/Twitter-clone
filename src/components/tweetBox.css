@@ -27,3 +27,13 @@
     margin-left: 450px !important;
     margin-bottom: 10px !important;
 }
+
+.tweet-box-imageInput{
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    margin-left: 80px;
+    font-size: 20px;
+    border: none;
+    width: 80%;
+}
