@@ -5,7 +5,7 @@ import Post from "./Post";
 import { useState } from "react";
 import { useEffect } from "react";
 import { db } from "./firebaseConfig";
-import { doc, onSnapshot,getDocs,collection } from "firebase/firestore";
+import { getDocs,collection } from "firebase/firestore";
 import FlipMove from "react-flip-move";
 // import { collection, onSnapshot } from "firebase/firestore";
 

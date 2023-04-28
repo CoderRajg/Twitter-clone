@@ -10,7 +10,7 @@ function TweetBox() {
 
   const sentTweet = async function(e){
     e.preventDefault();
-    if(tweet != ""){
+    if(tweet !== ""){
     await addDoc(collection(db,'post'),{
       displayName: "Raj Gupta",
       username: "raj_gupta",
