@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { db } from "./firebaseConfig";
 import { doc, onSnapshot,getDocs,collection } from "firebase/firestore";
+import FlipMove from "react-flip-move";
 // import { collection, onSnapshot } from "firebase/firestore";
 
 function Feed() {
@@ -42,6 +43,7 @@ function Feed() {
       {/* Tweetbox */}
       <TweetBox />
       {/* Tweets/posts */}
+      <FlipMove>
       {post.map((post) => (
         <Post
           // displayName={post.displayName}
@@ -53,6 +55,7 @@ function Feed() {
           avatar={post.avatar}
         />
       ))}
+      </FlipMove>
       {/* Tweets/posts */}
       {/* Tweets/posts */}
       {/* Tweets/posts */}

@@ -10,16 +10,19 @@ function TweetBox() {
 
   const sentTweet = async function(e){
     e.preventDefault();
+    if(tweet != ""){
     await addDoc(collection(db,'post'),{
       displayName: "Raj Gupta",
       username: "raj_gupta",
       verified: true,
       text: tweet,
       avatar:"https://www.bollywoodhungama.com/wp-content/uploads/2023/04/Yash-Raj-Films-decides-to-take-a-break-from-Ranveer-Singh-after-his-hat-trick-of-flops-2.jpg",
-      image:tweetImage
+      image:tweetImage,
+      createdAt: new Date()
     });
     setTweet("");
     setTweetImage("");
+  }
     // db.collection('post').add({
     //   displayName: "Raj Gupta",
     //   userName: "raj_gupta",

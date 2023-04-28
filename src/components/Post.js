@@ -1,4 +1,4 @@
-import React from "react";
+import React , {forwardRef} from "react";
 import "./post.css";
 import { Avatar } from "@mui/material";
 import VerifiedIcon from "@mui/icons-material/Verified";
@@ -7,10 +7,10 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PollIcon from "@mui/icons-material/Poll";
 
-function Post({displayName,username,verified,text,image,avatar}) {
+const Post = forwardRef(({displayName,username,verified,text,image,avatar},ref)=> {
   
   return (
-    <div className="post">
+    <div className="post" ref={ref}>
       <div className="post-avatar">
         <Avatar src={avatar}/>
       </div>
@@ -44,6 +44,6 @@ function Post({displayName,username,verified,text,image,avatar}) {
       </div>
     </div>
   );
-}
+});
 
 export default Post;
